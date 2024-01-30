@@ -1,0 +1,44 @@
+Question:
+Suppose that towers(5, 2, 3) is invoked.
+1. How will the first recursive call to towers() be invoked? Answer this
+question in the form: towers(x, y, z) where you give the actual values to the
+three parameters.
+	
+	The first recursive call to tower() will be (4, 2, 1). This is because in the first step the program will move 4 disks from rod 2 onto rod 1. Moreover,
+the initial param can be obtained by decreasing it every recursion, where the rod its moving FROM stays the same and the destination can be obtained by subtracting the spare by the "from" and "dest" ( 6 - from - dest) to get the final destination.
+
+2. How many recursive calls to towers() will be made before this first recursive call actually returns to the initial invocation?
+
+	To find the total number of recursicve calls required to solve the problem, we can apply this simple formula (2^n - 1) which will give us a total step count of 31.
+
+
+3. Once towers(5, 2, 3) has invoked its first recursive call to towers() and this invocation has returned, what will be printed to stdout? (i.e. What actual move will be made by towers(5, 2, 3) ?)
+
+	After the first move, the second move will be (2, 3) indicatind a move from rod #2 to rod #3 as shown by the output.
+
+4. How will the second recursive call to towers() be invoked? Answer this
+question in the form: towers(x, y, z) where you give the actual values to the
+three parameters. 
+
+	using the terminology from Q1, we can find the actual values.
+initial state: (5, 2, 3)
+
+First 		 : ( 5 - 1, stays same, 6 - from - dest)
+			 : (4, 2, 1)
+
+First 		 : ( 4 - 1, stays same, 6 - from - dest)
+			 : (3, 2, 3)
+
+Q2) Suppose that towers(8, 1, 2) is invoked. How many lines will be printed to stdout?
+
+	2^8 - 1 = 255 lines
+
+
+Everything works fine
+
+
+
+
+
+
+
