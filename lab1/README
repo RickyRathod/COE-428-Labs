@@ -1,0 +1,22 @@
+Q) Suppose you were given an object module (with no access to source code) that sorted an array of integers very efficiently. However, the sort function in the object module must be invoked with the following signature:
+
+betterSort(int data[], first, last);
+
+where the array to sort is data and the parameters first and last give the indices of the portion of the array that is to be sorted. How could you write a mySort() function with the signature used in this lab that could exploit the better sorting function in the supplied object module?
+
+A) 
+
+nDataItems = 4;
+	 data[0] = 10;
+	 data[1] = 20;
+	 data[2] = 30;
+	 data[3] = 40;
+//array being sorted is data and the first and last give the indices.
+mySort(data, data[0], data[nDataItems-1]); 
+
+
+Lab1 
+
+Everything seems to work correctly, only issue im having is i dont know how to test the last portion of testSort2 and what output I should be exactly reciving. Although I believe my code should be correct given the conditions.
+
+Atoi() is being used as cmd args are in string format and it can be converted into integers.
