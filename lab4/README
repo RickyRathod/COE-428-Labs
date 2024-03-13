@@ -1,0 +1,3 @@
+Overall the program runs, however i didnt implement the delete functionality fully. If i try to delete in the cmd then i just set all stages to 0 ('A'). Didnt get around to finishing that portion.
+
+Other than that garbage collection works fine and so does the rest of the code.

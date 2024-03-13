@@ -1,0 +1,20 @@
+Lab3 - Overview
+
+My insetion sort seems to be working fine? when i run the command given in the lab it does result in Comparisons: 0, Swaps: 0, Copy operations: 0. 
+
+And i believe my merge sort does work however, when i run "mergeSort" in the terminal, nothing happend until I press enter then input some values " 1 2 3" where after i must press "ctrl + D" for it to know that it's the end of the file but i feel the comparisions swaps and copies might be wrong. Other than that everything seems to work fine?
+
+InsertionSort - Overview
+
+In simple terms, insertion sort compares its current value to the its left neighbour. If the value to the left is "out of place" then it will swap positions.It will continue to do this until all the elements in the array are compared and sorted.Starts at [0] and since there is nothing to its left it sets value at [0] as its base case then begins comparison.
+
+worst-O(n^2) 
+best-O(n)
+
+MergeSort - Overview 
+
+Uses recursion along with divide and concor to continuously split the array until it reaches a base case. Then it examines each element and compares the values, the merges them into a temp array. Recursively repeats until all elements are ordered then merged back into a full array.
+
+best & worst O(nlogn)  
+
+
